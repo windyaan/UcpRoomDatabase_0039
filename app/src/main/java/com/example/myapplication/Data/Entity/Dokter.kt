@@ -13,3 +13,14 @@ data class Dokter(
     val noHp: String,
     val jamKerja: String
 )
+
+@Entity(tableName = "jadwal")
+data class Jadwal(
+    @PrimaryKey
+    val id: String,
+    val namaDokter: String,
+    val namaPasien: String,
+    val noHp: String,
+    val tanggal: String,
+    val status: String
+)
