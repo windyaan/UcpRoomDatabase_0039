@@ -26,7 +26,7 @@ interface JadwalDao {
 
     @Query("SELECT * FROM jadwal")
     fun getAllJadwal(): Flow<List<Jadwal>>
-    
+
     @Update
     suspend fun updateJadwal(jadwal: Jadwal)
 
